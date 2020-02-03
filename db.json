@@ -1,0 +1,35 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": " Setup server",
+      "attention": false,
+      "date": "01-01-2020 ",
+      "tech": "Farukh"
+    },
+    {
+      "message": "azad",
+      "attention": true,
+      "tech": "Brad",
+      "date": "2020-01-12T19:05:32.367Z",
+      "id": 5
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstname": "Farukh",
+      "lastname": "Saifi"
+    },
+    {
+      "id": 2,
+      "firstname": "Azad",
+      "lastname": "Saifi"
+    },
+    {
+      "id": 3,
+      "firstname": "Ravi",
+      "lastname": "Nandaz"
+    }
+  ]
+}

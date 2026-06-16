@@ -1,0 +1,6 @@
+# Automatically request review from the owner on every pull request.
+# Single source of truth — do not duplicate via dependabot.yml reviewers or PR workflows.
+#
+# Also enable in GitHub: Settings → Branches → (rule) → "Require review from Code Owners"
+# and Settings → General → "Automatically request reviews from code owners".
+* @FarukhSaifi

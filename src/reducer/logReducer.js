@@ -1,15 +1,9 @@
-import {
-  GET_LOGS,
-  SET_LOADING,
-  LOG_ERROR,
-  ADD_LOG,
-  DELETE_LOG
-} from "../action/types";
+import { ADD_LOG, DELETE_LOG, GET_LOGS, LOG_ERROR, SET_LOADING } from "../action/types";
 
 const initialState = {
   logs: [],
   loading: false,
-  error: ""
+  error: "",
 };
 
 const logReducer = (state = initialState, action) => {
@@ -17,30 +11,30 @@ const logReducer = (state = initialState, action) => {
     case GET_LOGS:
       return {
         ...state,
-        logs: action.payload
+        logs: action.payload,
       };
     case ADD_LOG:
       return {
         ...state,
         logs: [...state.logs, action.payload],
-        loading: false
+        loading: false,
       };
     case DELETE_LOG:
       return {
         ...state,
-        logs: state.logs.filter(log => log.id !== action.payload),
-        loading: false
+        logs: state.logs.filter((log) => log.id !== action.payload),
+        loading: false,
       };
     case SET_LOADING:
       return {
         ...state,
-        loading: true
+        loading: true,
       };
     case LOG_ERROR:
       console.error(action.payload);
       return {
         ...state,
-        error: action.payload
+        error: action.payload,
       };
 
     default:

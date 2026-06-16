@@ -12,7 +12,7 @@ const initialState = {
   error: ""
 };
 
-export default (state = initialState, action) => {
+const logReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_LOGS:
       return {
@@ -47,3 +47,5 @@ export default (state = initialState, action) => {
       return state;
   }
 };
+
+export default logReducer;

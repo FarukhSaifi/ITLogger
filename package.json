@@ -44,7 +44,7 @@
   "devDependencies": {
     "ajv": "^8.17.1",
     "concurrently": "^10.0.3",
-    "json-server": "^0.15.1"
+    "json-server": "^0.17.4"
   },
   "proxy": "http://localhost:5000"
 }

@@ -19,7 +19,7 @@ export const addLog = log => async dispatch => {
         dispatch({ type: LOG_ERROR, payload: error.data });
       });
   } catch (err) {
-    dispatch({ type: LOG_ERROR, payload: err.response.data });
+    dispatch({ type: LOG_ERROR, payload: err.response?.data ?? err.message });
   }
 };
 // Get Logs From Json Server DB.json
@@ -33,7 +33,7 @@ export const getLogs = () => async dispatch => {
       payload: response.data
     });
   } catch (err) {
-    dispatch({ type: LOG_ERROR, payload: err.response.data });
+    dispatch({ type: LOG_ERROR, payload: err.response?.data ?? err.message });
   }
 };
 // Delete Log
@@ -47,7 +47,7 @@ export const deleteLog = id => async dispatch => {
       payload: id
     });
   } catch (err) {
-    dispatch({ type: LOG_ERROR, payload: err.response.data });
+    dispatch({ type: LOG_ERROR, payload: err.response?.data ?? err.message });
   }
 };
 

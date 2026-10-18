@@ -44,7 +44,7 @@
   "devDependencies": {
     "@testing-library/dom": "^10.4.2",
     "ajv": "^8.20.0",
-    "concurrently": "^10.0.5",
+    "concurrently": "^10.0.6",
     "json-server": "^0.17.4"
   },
   "proxy": "http://localhost:5000"
